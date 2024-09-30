@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaLocalidades">
+
+    <Button
+        android:id="@+id/buttonengativa"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Engativá"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttontunjuelito"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/tunjuelito"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonfontibon"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Fontibón"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonteusaquillo"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/teusaquillo"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonkennedy"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Kennedy"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonusme"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/usme"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonmartires"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/los_m_rtires"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonusaquen"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/usaqu_n"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonchapinero"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Chapinero"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonsumapaz"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/sumapaz"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonciudadbolivar"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Ciudad_bol_var"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonsuba"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/suba"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonbosa"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/bosa"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonsantafe"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/santa_fe"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonlacandelaria"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/la_candelaria"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonsancristobal"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/san_crist_bal"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonpuentearanda"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/puente_aranda"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonrafaeluribe"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/rafael_uribe_uribe"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonbarriosunidos"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/barrios_unidos"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/localidades"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAntonio"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/antonio_nari_o"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

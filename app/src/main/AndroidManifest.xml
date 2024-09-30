@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AguaZero"
+        tools:targetApi="31">
+        <activity
+            android:name=".Infoporlocalidades"
+            android:exported="false" />
+        <activity
+            android:name=".Infolocalidades2"
+            android:exported="false" />
+        <activity
+            android:name=".Infolocalidades"
+            android:exported="false" />
+        <activity
+            android:name=".info_localidades_individual"
+            android:exported="false" />
+        <activity
+            android:name=".MapadeBogota"
+            android:exported="false" />
+        <activity
+            android:name=".MapaBogota"
+            android:exported="false" />
+        <activity
+            android:name=".BarrioEscogido"
+            android:exported="false" />
+        <activity
+            android:name=".ListaLocalidades"
+            android:exported="false" />
+        <activity
+            android:name=".ListaUbicacion"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

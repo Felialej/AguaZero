@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AguaZero</string>
+    <string name="_30_09_2024">30/09/2024</string>
+    <string name="pr_ximo_corte_de_agua">Próximo Corte de Agua</string>
+    <string name="actual">Actual</string>
+    <string name="localidad">Localidad</string>
+    <string name="nombre">Nombre</string>
+    <string name="suba">Suba</string>
+    <string name="teusaquillo">Teusaquillo</string>
+    <string name="ciudad_bol_var">Ciudad Bolívar</string>
+    <string name="antonio_nari_o">Antonio Nariño</string>
+    <string name="barrios_unidos">Barrios Unidos</string>
+    <string name="los_m_rtires">Los Mártires</string>
+    <string name="sumapaz">Sumapaz</string>
+    <string name="rafael_uribe_uribe">Rafael Uribe Uribe</string>
+    <string name="la_candelaria">La Candelaria</string>
+    <string name="puente_aranda">Puente Aranda</string>
+    <string name="engativ">Engativá</string>
+    <string name="localidades">Localidades</string>
+    <string name="usaqu_n">Usaquén</string>
+    <string name="chapinero">Chapinero</string>
+    <string name="santa_fe">Santa Fe</string>
+    <string name="san_crist_bal">San Cristóbal</string>
+    <string name="usme">Usme</string>
+    <string name="tunjuelito">Tunjuelito</string>
+    <string name="bosa">Bosa</string>
+    <string name="kennedy">Kennedy</string>
+    <string name="fontib_n">Fontibón</string>
+    <string name="configurar_nnotificaciones">Configurar \nNotificaciones</string>
+    <string name="Chapinero">Chapinero</string>
+    <string name="Ciudad_bol_var">Ciudad Bolívar</string>
+    <string name="Engativá">Engativá</string>
+    <string name="Fontibón">Fontibón</string>
+    <string name="Kennedy">Kennedy</string>
+</resources>
