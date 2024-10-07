@@ -529,4 +529,270 @@
         app:srcCompat="@drawable/baseline_arrow_right_alt_24"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/buttonUsaquen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <Button
+        android:id="@+id/buttonSuba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Button
+        android:id="@+id/buttonEngativa"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <Button
+        android:id="@+id/buttonFontibon"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/buttonTeusaquillo"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/buttonBarriosUnidos"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/buttonChapinero"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.799"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/buttonPuenteAranda"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <Button
+        android:id="@+id/buttonKennedy"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/buttonBosa"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <Button
+        android:id="@+id/buttonCiudadBolivar"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <Button
+        android:id="@+id/buttonTunjuelito"
+        android:layout_width="25dp"
+        android:layout_height="49dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="135"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <Button
+        android:id="@+id/buttonRafaelUribe"
+        android:layout_width="33dp"
+        android:layout_height="55dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="150"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <Button
+        android:id="@+id/buttonUsme"
+        android:layout_width="40dp"
+        android:layout_height="61dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <Button
+        android:id="@+id/buttonSumaPaz"
+        android:layout_width="40dp"
+        android:layout_height="61dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/buttonLaCandelaria"
+        android:layout_width="40dp"
+        android:layout_height="61dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/buttonMartires"
+        android:layout_width="23dp"
+        android:layout_height="63dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="230"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/buttonSantaFe"
+        android:layout_width="11dp"
+        android:layout_height="52dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="220"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <Button
+        android:id="@+id/buttonSanCristobal"
+        android:layout_width="32dp"
+        android:layout_height="74dp"
+        android:background="@color/transparente"
+        app:iconTint="@color/transparente"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
