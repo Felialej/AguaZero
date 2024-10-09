@@ -32,7 +32,6 @@ public class Infolocalidades extends AppCompatActivity {
         // Referencia al botón fuera del bloque de insets
         ImageButton regresar = findViewById(R.id.imageButtonregresar);
 
-
         // Configurar el click listener del botón "regresar"
         regresar.setOnClickListener(v -> {
             Intent intent = new Intent(Infolocalidades.this, ListaLocalidades.class);
@@ -61,7 +60,7 @@ public class Infolocalidades extends AppCompatActivity {
         TextView tvLocalidad = findViewById(R.id.textViewnombrelocalidad);
         TextView tvInfoAdicional = findViewById(R.id.textViewfecha);
 
-        // Recibimos la posición enviada desde ListaLocalidades
+        // Recibimos la posición enviada desde el intent de MapadeBogota
         int position = getIntent().getIntExtra("position", -1);
 
         // Validamos que la posición sea válida (entre 0 y el tamaño del array)
@@ -96,4 +95,5 @@ public class Infolocalidades extends AppCompatActivity {
         });
     }
 }
+
 
