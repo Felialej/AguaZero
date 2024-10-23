@@ -10,11 +10,11 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="431dp"
-        android:layout_height="856dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.914"
         app:srcCompat="@drawable/brujula" />
 
     <TextView
@@ -57,14 +57,14 @@
         android:rotation="90"
         android:text="BOGOTÁ D.C"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -210,10 +210,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668"
+        app:layout_constraintVertical_bias="0.743"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -228,7 +228,7 @@
         app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintVertical_bias="0.296"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -240,10 +240,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387"
+        app:layout_constraintVertical_bias="0.434"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -255,10 +255,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
+        app:layout_constraintVertical_bias="0.345"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -270,10 +270,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347"
+        app:layout_constraintVertical_bias="0.403"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -288,7 +288,7 @@
         app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486"
+        app:layout_constraintVertical_bias="0.537"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -300,10 +300,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
+        app:layout_constraintVertical_bias="0.542"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -315,10 +315,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415"
+        app:layout_constraintVertical_bias="0.479"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -330,25 +330,25 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357"
+        app:layout_constraintVertical_bias="0.411"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewMartires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rotation="125"
+        android:rotation="129"
         android:text="Martires"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="0.55"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -361,25 +361,26 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintHorizontal_bias="0.689"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewAntonioNariño"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rotation="60"
+        android:rotation="39"
         android:text="Antonio \nNariño"
         android:textColor="@color/white"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543"
+        app:layout_constraintVertical_bias="0.597"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -391,10 +392,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574"
+        app:layout_constraintVertical_bias="0.628"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -406,10 +407,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565"
+        app:layout_constraintVertical_bias="0.61"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -421,10 +422,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646"
+        app:layout_constraintVertical_bias="0.69"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -439,7 +440,7 @@
         app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
+        app:layout_constraintVertical_bias="0.297"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -451,10 +452,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
+        app:layout_constraintVertical_bias="0.544"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -466,10 +467,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
+        app:layout_constraintVertical_bias="0.653"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -485,7 +486,7 @@
         app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.753"
+        app:layout_constraintVertical_bias="0.813"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -497,10 +498,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintVertical_bias="0.574"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -509,10 +510,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="0.768"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521"
+        app:layout_constraintVertical_bias="0.572"
         app:srcCompat="@drawable/baseline_arrow_right_alt_24"
         tools:ignore="MissingConstraints" />
 
@@ -525,11 +526,9 @@
         app:layout_constraintHorizontal_bias="0.691"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756"
+        app:layout_constraintVertical_bias="0.813"
         app:srcCompat="@drawable/baseline_arrow_right_alt_24"
         tools:ignore="MissingConstraints" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

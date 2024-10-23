@@ -25,7 +25,6 @@ public class EditarPerfil extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_editar_perfil);
 
         // Ajustar los insets del diseño
@@ -34,6 +33,20 @@ public class EditarPerfil extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button salir = findViewById(R.id.buttoncerrarsesion);
+
+
+        // Configurar el click listener del botón
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear el Intent para abrir la nueva actividad
+                Intent intent = new Intent(EditarPerfil.this, MainActivity.class);
+                startActivity(intent); // Lanza la nueva actividad
+            }
+        });
+
 
         // Inicializar UserManager
         userManager = new UserManager(this);
@@ -78,6 +91,7 @@ public class EditarPerfil extends AppCompatActivity {
                 guardarCambios(v);
             }
         });
+
     }
 
     // Método para actualizar el nombre y correo en SharedPreferences y mostrarlos en los campos
