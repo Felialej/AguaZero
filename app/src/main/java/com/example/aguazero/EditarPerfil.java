@@ -9,16 +9,17 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.regex.Pattern;
+
 public class EditarPerfil extends AppCompatActivity {
     // Variables globales para los campos de texto
     TextView mensajeTextView;
-    EditText mensajeeEditText, correoEditText;
+    EditText mensajeeEditText, correoEditText, nuevaPasswordEditText, confirmarPasswordEditText;
     UserManager userManager;
     Usuario usuarioActual;
 
@@ -36,17 +37,12 @@ public class EditarPerfil extends AppCompatActivity {
 
         Button salir = findViewById(R.id.buttoncerrarsesion);
 
-
         // Configurar el click listener del botón
-        salir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear el Intent para abrir la nueva actividad
-                Intent intent = new Intent(EditarPerfil.this, MainActivity.class);
-                startActivity(intent); // Lanza la nueva actividad
-            }
+        salir.setOnClickListener(v -> {
+            // Crear el Intent para abrir la nueva actividad
+            Intent intent = new Intent(EditarPerfil.this, MainActivity.class);
+            startActivity(intent); // Lanza la nueva actividad
         });
-
 
         // Inicializar UserManager
         userManager = new UserManager(this);
@@ -55,57 +51,64 @@ public class EditarPerfil extends AppCompatActivity {
         usuarioActual = userManager.cargarUsuario();
 
         // Inicializar los campos de texto
-        mensajeTextView = findViewById(R.id.textViewnombreusuario); // TextView que vas a actualizar
-        mensajeeEditText = findViewById(R.id.editText3); // EditText de donde tomas el texto del nombre
-        correoEditText = findViewById(R.id.editText4); // EditText de donde tomas el texto del correo
+        mensajeTextView = findViewById(R.id.textViewnombreusuario);
+        mensajeeEditText = findViewById(R.id.editText3);
+        correoEditText = findViewById(R.id.editText4);
+
+        // Inicializar los campos de contraseña
+        nuevaPasswordEditText = findViewById(R.id.editText2); // Nuevo campo de contraseña
+        confirmarPasswordEditText = findViewById(R.id.editText5); // Confirmación de nueva contraseña
 
         // Mostrar el nombre y el correo del usuario actual en los campos correspondientes
         if (usuarioActual != null) {
-            mensajeTextView.setText(usuarioActual.getNombre()); // Mostrar el nombre en el TextView
-            mensajeeEditText.setText(usuarioActual.getNombre()); // Mostrar el nombre en el EditText (este es el cambio)
-            correoEditText.setText(usuarioActual.getEmail()); // Mostrar el correo
+            mensajeTextView.setText(usuarioActual.getNombre());
+            mensajeeEditText.setText(usuarioActual.getNombre());
+            correoEditText.setText(usuarioActual.getEmail());
         } else {
             mensajeTextView.setText("Nombre no disponible");
             correoEditText.setHint("Correo no disponible");
         }
 
-        // Referencia al botón "Regresar"
-        ImageButton regresar = findViewById(R.id.imageButtonregresar);
-
         // Listener para el botón "Regresar"
-        regresar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear el Intent para abrir la nueva actividad
-                Intent intent = new Intent(EditarPerfil.this, Inicio.class);
-                startActivity(intent); // Lanza la nueva actividad
-            }
+        ImageButton regresar = findViewById(R.id.imageButtonregresar);
+        regresar.setOnClickListener(v -> {
+            Intent intent = new Intent(EditarPerfil.this, Inicio.class);
+            startActivity(intent);
         });
 
         // Listener para el botón que sobreescribirá el TextView y EditText con los nuevos valores
-        Button aceptarCambios = findViewById(R.id.buttonguardar); // Asegúrate que tengas un botón con este ID en tu XML
-        aceptarCambios.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Llamar al método para actualizar los valores
-                guardarCambios(v);
-            }
-        });
-
+        Button aceptarCambios = findViewById(R.id.buttonguardar);
+        aceptarCambios.setOnClickListener(this::guardarCambios);
     }
 
-    // Método para actualizar el nombre y correo en SharedPreferences y mostrarlos en los campos
+    // Método para actualizar el nombre, correo y contraseña en SharedPreferences
     public void guardarCambios(View view) {
         Log.i("Info", "Botón de aceptar cambios presionado");
 
-        // Obtener el nuevo nombre y correo
+        // Obtener el nuevo nombre, correo y contraseñas
         String nuevoNombre = mensajeeEditText.getText().toString();
         String nuevoCorreo = correoEditText.getText().toString();
+        String nuevaPassword = nuevaPasswordEditText.getText().toString();
+        String confirmarPassword = confirmarPasswordEditText.getText().toString();
 
         // Validar que los campos no estén vacíos
         if (!nuevoNombre.isEmpty() && !nuevoCorreo.isEmpty()) {
+            // Validar las contraseñas si el usuario ingresó algo en los campos
+            if (!nuevaPassword.isEmpty() && !confirmarPassword.isEmpty()) {
+                if (!nuevaPassword.equals(confirmarPassword)) {
+                    Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                    return; // Detener la ejecución si las contraseñas no coinciden
+                } else if (!validarContraseña(nuevaPassword)) {
+                    Toast.makeText(this, "La contraseña no cumple con los requisitos.", Toast.LENGTH_LONG).show();
+                    return; // Detener si no cumple los requisitos
+                } else {
+                    // Actualizar la contraseña del usuario actual
+                    usuarioActual.setPassword(nuevaPassword);
+                }
+            }
+
             // Actualizar el TextView con el nuevo nombre
-            mensajeTextView.setText(nuevoNombre);  // Sobrescribir el contenido del TextView con el nuevo nombre
+            mensajeTextView.setText(nuevoNombre);
 
             // Actualizar el objeto usuario actual
             usuarioActual.setNombre(nuevoNombre);
@@ -121,7 +124,15 @@ public class EditarPerfil extends AppCompatActivity {
             Toast.makeText(this, "Por favor, ingresa nombre y correo", Toast.LENGTH_SHORT).show();
         }
     }
+
+    // Validar que la nueva contraseña cumpla con los requisitos
+    private boolean validarContraseña(String password) {
+        // La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una minúscula, un número y un carácter especial
+        Pattern passwordPattern = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$");
+        return passwordPattern.matcher(password).matches();
+    }
 }
+
 
 
 

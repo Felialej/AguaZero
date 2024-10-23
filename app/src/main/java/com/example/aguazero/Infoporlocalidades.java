@@ -23,15 +23,22 @@ public class Infoporlocalidades extends AppCompatActivity {
             return insets;
         });
 
-        // Obtener la referencia al TextView donde se mostrará la localidad
+        // Obtener la referencia a los TextView donde se mostrarán la localidad y la fecha
         TextView tvLocalidad = findViewById(R.id.textViewnombrelocalidad);
+        TextView tvFechaCorte = findViewById(R.id.textViewfecha);
 
         // Recibir la localidad seleccionada desde ListaUbicacion
         String localidadSeleccionada = getIntent().getStringExtra("localidadSeleccionada");
 
         if (localidadSeleccionada != null) {
-            // Mostrar la localidad en el TextView
+            // Mostrar la localidad en el TextView correspondiente
             tvLocalidad.setText(localidadSeleccionada);
+
+            // Obtener y mostrar la fecha de corte correspondiente usando DatosLocalidades
+            String fechaCorte = DatosLocalidades.obtenerFechaCorte(localidadSeleccionada);
+            tvFechaCorte.setText(fechaCorte);
         }
     }
 }
+
+

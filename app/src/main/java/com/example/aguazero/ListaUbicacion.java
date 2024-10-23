@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,20 +41,16 @@ public class ListaUbicacion extends AppCompatActivity {
             return insets;
         });
 
-        // Referencia a los botones
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
 
-        // Cargar valores guardados en SharedPreferences
         loadButtonData();
 
-        // Referencia a los imageButtons
         imageButton1 = findViewById(R.id.imageButton1);
         imageButton2 = findViewById(R.id.imageButton2);
         imageButton3 = findViewById(R.id.imageButton3);
 
-        // Configurar listeners para sobrescribir los botones con "--------"
         imageButton1.setOnClickListener(v -> {
             button2.setText("--------");
             saveButtonData("button2Text", "--------");
@@ -67,22 +64,22 @@ public class ListaUbicacion extends AppCompatActivity {
             saveButtonData("button4Text", "--------");
         });
 
-        // Capturar los datos enviados desde Infolocalidades
         Intent intent = getIntent();
         String localidadSeleccionada = intent.getStringExtra("localidadSeleccionada");
         int contador = intent.getIntExtra("contador", -1);
 
-        // Sobrescribir los botones según el valor del contador y si tienen "--------"
         if (localidadSeleccionada != null) {
-            sobrescribirBoton(localidadSeleccionada, contador);
+            if (!localidadYaSeleccionada(localidadSeleccionada)) {
+                sobrescribirBoton(localidadSeleccionada, contador);
+            } else {
+                Toast.makeText(ListaUbicacion.this, "La localidad ya está seleccionada.", Toast.LENGTH_SHORT).show();
+            }
         }
 
-        // Configurar listeners para los botones de localidad
         button2.setOnClickListener(v -> seleccionarLocalidad(button2.getText().toString()));
         button3.setOnClickListener(v -> seleccionarLocalidad(button3.getText().toString()));
         button4.setOnClickListener(v -> seleccionarLocalidad(button4.getText().toString()));
 
-        // Otros botones
         ImageButton regresar = findViewById(R.id.imageButtonregresar);
         ImageButton añadir = findViewById(R.id.imageButtonañadir);
 
@@ -92,13 +89,16 @@ public class ListaUbicacion extends AppCompatActivity {
         });
 
         añadir.setOnClickListener(v -> {
-            Intent intent1 = new Intent(ListaUbicacion.this, ListaLocalidades.class);
-            startActivity(intent1);
+            if (todosBotonesOcupados()) {
+                Toast.makeText(ListaUbicacion.this, "No puedes añadir más localidades.", Toast.LENGTH_SHORT).show();
+            } else {
+                Intent intent1 = new Intent(ListaUbicacion.this, ListaLocalidades.class);
+                startActivity(intent1);
+            }
         });
     }
 
     private void sobrescribirBoton(String localidad, int contador) {
-        // Orden de prioridad: button2, button3, button4
         if (button2.getText().toString().equals("--------")) {
             button2.setText(localidad);
             saveButtonData("button2Text", localidad);
@@ -109,7 +109,6 @@ public class ListaUbicacion extends AppCompatActivity {
             button4.setText(localidad);
             saveButtonData("button4Text", localidad);
         } else {
-            // Si ningún botón tiene "--------", sobrescribir según el contador
             if (contador == 0) {
                 button2.setText(localidad);
                 saveButtonData("button2Text", localidad);
@@ -123,11 +122,21 @@ public class ListaUbicacion extends AppCompatActivity {
         }
     }
 
+    private boolean todosBotonesOcupados() {
+        return !button2.getText().toString().equals("--------") &&
+                !button3.getText().toString().equals("--------") &&
+                !button4.getText().toString().equals("--------");
+    }
+
+    private boolean localidadYaSeleccionada(String localidad) {
+        return button2.getText().toString().equals(localidad) ||
+                button3.getText().toString().equals(localidad) ||
+                button4.getText().toString().equals(localidad);
+    }
+
     private void seleccionarLocalidad(String buttonText) {
-        // Busca la localidad que coincide con el texto del botón
         for (String localidad : localidades) {
             if (localidad.equals(buttonText)) {
-                // Si se encuentra, pasamos el dato a la actividad Infoporlocalidades
                 Intent intent = new Intent(ListaUbicacion.this, Infoporlocalidades.class);
                 intent.putExtra("localidadSeleccionada", localidad);
                 startActivity(intent);
@@ -137,22 +146,20 @@ public class ListaUbicacion extends AppCompatActivity {
     }
 
     private void loadButtonData() {
-        // Recuperar los textos de SharedPreferences
         String button2Text = sharedPreferences.getString("button2Text", "---");
         String button3Text = sharedPreferences.getString("button3Text", "---");
         String button4Text = sharedPreferences.getString("button4Text", "---");
 
-        // Establecer los textos recuperados en los botones
         button2.setText(button2Text);
         button3.setText(button3Text);
         button4.setText(button4Text);
     }
 
     private void saveButtonData(String key, String value) {
-        // Guardar el nuevo valor en SharedPreferences
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(key, value);
-        editor.apply(); // Guardar los cambios
+        editor.apply();
     }
 }
+
 

@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Infolocalidades">
+    tools:context=".Seleccionar_mi_localidad">
 
     <ImageButton
-        android:id="@+id/imageButtonregresar"
+        android:id="@+id/imageButtonregresar3"
         android:layout_width="48dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -25,7 +25,7 @@
         tools:ignore="ContentDescription,MissingConstraints,MissingPrefix" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imageView28"
         android:layout_width="69dp"
         android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,23 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textViewfecha3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30/09/2024"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Localidad"
@@ -52,23 +68,7 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <TextView
-        android:id="@+id/textViewnombrelocalidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre \nLocalidad"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
-
-    <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Proximo Corte de Agua"
@@ -84,26 +84,26 @@
         app:layout_constraintVertical_bias="0.573" />
 
     <TextView
-        android:id="@+id/textViewfecha"
+        android:id="@+id/textViewnombrelocalidadfavorita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30/09/2024"
+        android:text="Nombre \nLocalidad"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="28sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.212" />
 
     <Button
-        android:id="@+id/buttonseleccionar"
+        android:id="@+id/buttonseleccionarfavorita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Añadir a la lista"
+        android:text="Seleccionar como \nMi localidad"
         android:textColorHighlight="#3DB245"
         android:textColorLink="#3DB245"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,5 +112,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.83" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

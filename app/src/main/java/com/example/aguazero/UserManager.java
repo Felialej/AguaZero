@@ -3,8 +3,6 @@ package com.example.aguazero;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-
-
 public class UserManager {
 
     private static final String PREF_NAME = "usuarios";
@@ -40,6 +38,12 @@ public class UserManager {
         return null; // Retorna null si no hay usuario guardado
     }
 
+    // Validar si un correo ya está registrado
+    public boolean correoRegistrado(String email) {
+        String savedEmail = sharedPreferences.getString(KEY_EMAIL, null);
+        return email.equals(savedEmail);
+    }
+
     // Validar las credenciales del usuario
     public boolean validarUsuario(String email, String password) {
         String savedEmail = sharedPreferences.getString(KEY_EMAIL, null);
@@ -53,3 +57,4 @@ public class UserManager {
         editor.apply();
     }
 }
+
