@@ -1,4 +1,4 @@
-package com.example.aguazero;
+package com.example.aguazero.Localidades;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.aguazero.R;
 
 public class ListaUbicacion extends AppCompatActivity {
 
@@ -80,13 +82,7 @@ public class ListaUbicacion extends AppCompatActivity {
         button3.setOnClickListener(v -> seleccionarLocalidad(button3.getText().toString()));
         button4.setOnClickListener(v -> seleccionarLocalidad(button4.getText().toString()));
 
-        ImageButton regresar = findViewById(R.id.imageButtonregresar);
         ImageButton añadir = findViewById(R.id.imageButtonañadir);
-
-        regresar.setOnClickListener(v -> {
-            Intent intent1 = new Intent(ListaUbicacion.this, Inicio.class);
-            startActivity(intent1);
-        });
 
         añadir.setOnClickListener(v -> {
             if (todosBotonesOcupados()) {

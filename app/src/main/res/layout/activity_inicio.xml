@@ -6,33 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="0dp"
-    tools:context=".Inicio">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
-        app:srcCompat="@drawable/baseline_forum_24"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979"
-        app:srcCompat="@drawable/baseline_home_24"
-        tools:ignore="MissingConstraints" />
+    tools:context=".Login.Inicio">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -113,10 +87,10 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewfechamilocalidad"
         android:layout_width="194dp"
         android:layout_height="36dp"
-        android:text="@string/_30_09_2024"
+        android:text="--/--/----"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -249,33 +223,33 @@
         app:srcCompat="@drawable/baseline_notifications_24"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageViewForo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/baseline_forum_24"
+        tools:ignore="MissingConstraints" />
+
     <ImageButton
-        android:id="@+id/imageButtonnoticias"
+        android:id="@+id/imageButtonForo"
         android:layout_width="63dp"
         android:layout_height="56dp"
         android:background="@null"
         android:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984"
+        app:layout_constraintVertical_bias="0.971"
         app:srcCompat="@drawable/baseline_newspaper_24"
         app:tint="@color/transparente"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.306"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974"
-        app:srcCompat="@drawable/baseline_newspaper_24"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -284,14 +258,27 @@
         android:layout_height="51dp"
         android:background="@null"
         android:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/baseline_forum_24"
         app:tint="@color/transparente"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewNoticias"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/baseline_forum_24"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/baseline_newspaper_24"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -299,14 +286,27 @@
         android:layout_width="62dp"
         android:layout_height="49dp"
         android:background="@null"
-        app:tint="@color/transparente"
         android:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/baseline_home_24"
+        app:tint="@color/transparente"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
         app:srcCompat="@drawable/baseline_home_24"
         tools:ignore="MissingConstraints" />
 

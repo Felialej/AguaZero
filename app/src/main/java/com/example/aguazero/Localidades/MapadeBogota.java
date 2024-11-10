@@ -1,4 +1,4 @@
-package com.example.aguazero;
+package com.example.aguazero.Localidades;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.aguazero.Foro.ForoActivity;
+import com.example.aguazero.Login.Inicio;
+import com.example.aguazero.Login.EditarPerfil;
+import com.example.aguazero.R;
 
 public class MapadeBogota extends AppCompatActivity {
 
@@ -39,28 +44,23 @@ public class MapadeBogota extends AppCompatActivity {
             return insets;
         });
 
-        // Referencia al botón fuera del bloque de insets
         ImageButton volverinicio = findViewById(R.id.imageButtoninicio);
+        ImageButton IraForo = findViewById(R.id.imageButtonforo);
+        ImageButton IraEditarPerfil = findViewById(R.id.imageButtoneditarperfil);
 
-        // Crear un único OnClickListener para todas las localidades
         View.OnClickListener localidadClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Obtener el tag de la vista que fue clickeada (que contiene la posición)
-                int position = (int) v.getTag(); // Recuperar el tag como la posición
+                int position = (int) v.getTag();
 
-                // Crear el Intent para abrir la nueva actividad Seleccionar_mi_localidad
                 Intent intent = new Intent(MapadeBogota.this, Seleccionar_mi_localidad.class);
-
-                // Enviar la localidad y su fecha correspondiente
                 intent.putExtra("localidadSeleccionada", localidades[position]);
                 intent.putExtra("fechaCorte", fechasCorte[position]);
 
-                startActivity(intent); // Lanza la nueva actividad
+                startActivity(intent);
             }
         };
 
-        // Asignar el listener y tag a todas las localidades (esto no cambia)
         TextView iraantonio = findViewById(R.id.textViewAntonioNariño);
         iraantonio.setTag(0);
         iraantonio.setOnClickListener(localidadClickListener);
@@ -141,12 +141,21 @@ public class MapadeBogota extends AppCompatActivity {
         irausme.setTag(19);
         irausme.setOnClickListener(localidadClickListener);
 
-        // Configurar el click listener del botón de inicio
         volverinicio.setOnClickListener(v -> {
             Intent intent = new Intent(MapadeBogota.this, Inicio.class);
             startActivity(intent);
         });
+        IraForo.setOnClickListener(v -> {
+            Intent intent = new Intent(MapadeBogota.this, ForoActivity.class);
+            startActivity(intent);
+        });
+        IraEditarPerfil.setOnClickListener(v -> {
+            Intent intent = new Intent(MapadeBogota.this, EditarPerfil.class);
+            startActivity(intent);
+        });
+
     }
 }
+
 
 

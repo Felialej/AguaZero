@@ -1,4 +1,4 @@
-package com.example.aguazero;
+package com.example.aguazero.Localidades;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.aguazero.R;
 
 public class Infolocalidades extends AppCompatActivity {
 
@@ -26,13 +28,6 @@ public class Infolocalidades extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-        });
-
-        ImageButton regresar = findViewById(R.id.imageButtonregresar);
-
-        regresar.setOnClickListener(v -> {
-            Intent intent = new Intent(Infolocalidades.this, ListaLocalidades.class);
-            startActivity(intent);
         });
 
         Button buttonSeleccionar = findViewById(R.id.buttonseleccionar);

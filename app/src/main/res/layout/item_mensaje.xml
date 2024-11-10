@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Contenedor horizontal para el icono de menú y el mensaje principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Icono de tres puntos para el menú de opciones -->
+        <ImageView
+            android:id="@+id/menu_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_more_vert_24"
+            android:contentDescription="Menu options"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Contenedor del mensaje para aplicar padding dinámico -->
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="0dp"> <!-- Esto se ajustará dinámicamente en el adaptador -->
+
+            <!-- Texto del mensaje principal -->
+            <TextView
+                android:id="@+id/mensajeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Mensaje"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Texto para mostrar las respuestas anidadas -->
+    <TextView
+        android:id="@+id/respuestasTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+    android:paddingTop="4dp"
+    android:text="Respuestas"
+    android:textSize="14sp"
+    android:textColor="#666666"
+    android:visibility="gone" /> <!-- Oculto inicialmente -->
+</LinearLayout>

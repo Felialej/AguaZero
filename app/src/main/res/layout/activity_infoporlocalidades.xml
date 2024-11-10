@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Infolocalidades">
+    tools:context=".Localidades.Infolocalidades">
 
     <TextView
         android:id="@+id/textView13"

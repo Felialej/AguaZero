@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Foro.ForoActivity">
+
+    <Button
+        android:id="@+id/buttonForo2"
+        android:layout_width="433dp"
+        android:layout_height="207dp"
+        android:backgroundTint="@color/gris"
+        android:hint="Aquí va la informacion el foro actual,\nAquíiria el tema del foro o la pregunta del foro"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foros"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonForo1"
+        android:layout_width="433dp"
+        android:layout_height="243dp"
+        android:backgroundTint="@color/gris"
+        android:hint=""
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewnombreforo"
+        android:layout_width="392dp"
+        android:layout_height="49dp"
+        android:text="¿Creen que llueva hoy en Soacha?"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonForo1"
+        app:layout_constraintEnd_toEndOf="@+id/buttonForo1"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/buttonForo1"
+        app:layout_constraintTop_toTopOf="@+id/buttonForo1"
+        app:layout_constraintVertical_bias="0.185"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Como se preparan para \nlos cortes de agua?"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonForo2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonForo2"
+        app:layout_constraintStart_toStartOf="@+id/buttonForo2"
+        app:layout_constraintTop_toTopOf="@+id/buttonForo2"
+        app:layout_constraintVertical_bias="0.13"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewdescripcion"
+        android:layout_width="361dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="36dp"
+        android:text="Lo digo porque hoy pienso salir en la tarde, y no tengo sombrilla, no sé qué piensen ustedes, y esto es lo que quizá haga que le llegue agua a los embalses."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonForo1"
+        app:layout_constraintEnd_toEndOf="@+id/buttonForo1"
+        app:layout_constraintTop_toTopOf="@+id/buttonForo1"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

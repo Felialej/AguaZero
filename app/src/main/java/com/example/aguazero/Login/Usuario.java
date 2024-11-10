@@ -1,4 +1,4 @@
-package com.example.aguazero;
+package com.example.aguazero.Login;
 
 public class Usuario {
     private String nombre;

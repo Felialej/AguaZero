@@ -1,4 +1,4 @@
-package com.example.aguazero;
+package com.example.aguazero.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.aguazero.R;
 
 import java.util.regex.Pattern;
 
@@ -68,13 +69,6 @@ public class EditarPerfil extends AppCompatActivity {
             mensajeTextView.setText("Nombre no disponible");
             correoEditText.setHint("Correo no disponible");
         }
-
-        // Listener para el botón "Regresar"
-        ImageButton regresar = findViewById(R.id.imageButtonregresar);
-        regresar.setOnClickListener(v -> {
-            Intent intent = new Intent(EditarPerfil.this, Inicio.class);
-            startActivity(intent);
-        });
 
         // Listener para el botón que sobreescribirá el TextView y EditText con los nuevos valores
         Button aceptarCambios = findViewById(R.id.buttonguardar);

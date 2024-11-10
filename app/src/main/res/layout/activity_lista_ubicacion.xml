@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaUbicacion"
+    tools:context=".Localidades.ListaUbicacion"
     tools:layout_editor_absoluteX="-7dp"
     tools:layout_editor_absoluteY="-226dp">
 
@@ -84,34 +84,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.628"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButtonregresar"
-        android:layout_width="60dp"
-        android:layout_height="54dp"
-        android:background="@null"
-        android:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="68dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
         tools:ignore="MissingConstraints" />
 
     <TextView
